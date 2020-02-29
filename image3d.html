@@ -1,0 +1,142 @@
+<body>
+    <div class="container">
+      <div class="imgBx">
+        <img class="imgi" src="abcd.jpg" alt="">
+        <img class="imgi" src="abcd.jpg" alt="">
+        <img class="imgi" src="abcd.jpg" alt="">
+      </div>
+      <h2>CSS 3D Perspective Post</h2>
+      <div class="skew">
+        <p>Manjaro is a professionally made Linux based operating system that
+           is a suitable replacement for Windows or MacOS.
+           Multiple Desktop Environments are available through our
+           Official and Community editions. We also work with
+           manufacturers to design dedicated hardware. Visit the shop for more information.</p>
+           <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="imgBx">
+        <img class="imgi" src="bg.jpg" alt="">
+        <img class="imgi" src="bg.jpg" alt="">
+        <img class="imgi" src="bg.jpg" alt="">
+      </div>
+      <h2>CSS 3D Perspective Post</h2>
+      <div class="skew">
+        <p>Manjaro is a professionally made Linux based operating system that
+           is a suitable replacement for Windows or MacOS.
+           Multiple Desktop Environments are available through our
+           Official and Community editions. We also work with
+           manufacturers to design dedicated hardware. Visit the shop for more information.</p>
+           <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="imgBx">
+        <img class="imgi" src="sketch.png" alt="">
+        <img class="imgi" src="sketch.png" alt="">
+        <img class="imgi" src="sketch.png" alt="">
+      </div>
+      <h2>CSS 3D Perspective Post</h2>
+      <div class="skew">
+        <p>Manjaro is a professionally made Linux based operating system that
+           is a suitable replacement for Windows or MacOS.
+           Multiple Desktop Environments are available through our
+           Official and Community editions. We also work with
+           manufacturers to design dedicated hardware. Visit the shop for more information.</p>
+           <a href="#">Read More</a>
+      </div>
+    </div>
+
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif ;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #d5f;
+    flex-direction: column;
+  }
+  .container {
+    position: relative;
+    margin-top: 200px;
+    max-width: 800px;
+    transform: skewY(-20deg);
+  }
+  .container .imgBx {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+  }
+  .container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(0);
+    max-width: 100%;
+    transition: 0.5s;
+  }
+  .container .imgBx:hover img:nth-child(3) {
+    transform: translate(100px, -100px);
+  }
+  .container .imgBx:hover img:nth-child(2) {
+    transform: translate(50px, -50px);
+    opacity: 0.5;
+  }
+  .container .imgBx:hover img:nth-child(1) {
+    transform: translate(0px,0px);
+    opacity: 0.1;
+  }
+  .container h2 {
+    position: relative;
+    color: #fff;
+    font-size: 4em;
+  }
+  .container .skew {
+    transform-origin: top;
+    transform: skewX(45deg);
+  }
+  .container .skew p {
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .container .skew a {
+    position: relative;
+    padding: 10px 30px;
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    transform-origin: top;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    transform: skewX(-45deg);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  .container .skew a:hover {
+    background:  #fff;
+    color: #000;
+
+  }
+
+  .imgi {
+    color:  #16a085;
+    height: 150px;
+    width: 700px;
+  }
+</style>
+</body>
